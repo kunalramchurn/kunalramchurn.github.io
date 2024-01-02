@@ -1,3 +1,3 @@
-<b> My name is kunal </b>
+# My name is kunal
+## My name is kunal R
 
-# kunalramchurn.github.io
