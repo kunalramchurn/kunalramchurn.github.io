@@ -1,8 +1,8 @@
 Technical skills: Python,R,SQL
 
-##Experience
+## Experience
 - Analyst
 
 
-##Education
+## Education
 - Bachelor of Commerce
