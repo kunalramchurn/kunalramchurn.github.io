@@ -1,5 +1,4 @@
 title: Kunal Ramchurn
 description: Analyst
 show_downloads: true
-theme: jekyll-theme-chirpy
-theme_mode: dark
+theme: jekyll-theme-minimal
