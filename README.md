@@ -1,3 +1,8 @@
-# My name is kunal
-## My name is kunal R
+Technical skills: Python,R,SQL
 
+##Experience
+- Analyst
+
+
+##Education
+- Bachelor of Commerce
