@@ -1,8 +1,12 @@
-Technical skills: Python,R,SQL
+Technical skills: Python, R, SQL
+Machine Learning: Regression
 
 ## Experience
-- Analyst
-
+Corpay
+- Data Analyst
 
 ## Education
-- Bachelor of Commerce
+- Data Science
+- Bachelor of Commerce: Finance
+
+## Projects
