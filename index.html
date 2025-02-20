@@ -11,17 +11,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            color: #fff;
+            background: #f9f9f9;
+            color: #333;
             text-align: center;
         }
         header {
-            background: rgba(0, 0, 0, 0.8);
+            background: #fff;
             padding: 20px;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav {
             display: flex;
@@ -36,18 +37,52 @@
         }
         .nav-links a {
             text-decoration: none;
-            color: #fff;
+            color: #333;
             font-weight: bold;
         }
-        .section {
-            padding: 100px 20px;
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 50px;
+        }
+        .hero-text {
+            text-align: left;
+            max-width: 500px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .highlight {
+            background-color: #fde047;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+        .hero img {
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
         }
         footer {
-            background: rgba(0, 0, 0, 0.8);
+            background: #fff;
             padding: 20px;
             position: relative;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -65,36 +100,16 @@
         </nav>
     </header>
     
-    <section id="about" class="section">
-        <h1>About Me</h1>
-        <p>Hi, I'm Kunal. A Data Analyst with expertise in Python, SQL, and Machine Learning.</p>
-    </section>
-    
-    <section id="skills" class="section">
-        <h1>Technical Skills</h1>
-        <ul>
-            <li>Python, R, SQL</li>
-            <li>Machine Learning: Regression</li>
-        </ul>
-    </section>
-    
-    <section id="experience" class="section">
-        <h1>Experience</h1>
-        <p><strong>Corpay</strong> - Data Analyst</p>
-    </section>
-    
-    <section id="projects" class="section">
-        <h1>Projects</h1>
-        <ul>
-            <li>Project 1: Description</li>
-            <li>Project 2: Description</li>
-        </ul>
-    </section>
-    
-    <section id="contact" class="section">
-        <h1>Contact</h1>
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/kunal</a></p>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello! I'm Kunal, a <span class="highlight">developer</span> based in [Your Location].</h1>
+            <p>I love building tools that are user-friendly, simple, and delightful. I'm currently a Data Analyst at Corpay, working with Python, SQL, and Machine Learning.</p>
+            <div class="buttons">
+                <a href="#">View LinkedIn</a>
+                <a href="#">View GitHub</a>
+            </div>
+        </div>
+        <img src="Capture.PNG" alt="Kunal's Photo">
     </section>
     
     <footer>
