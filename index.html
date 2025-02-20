@@ -76,6 +76,43 @@
             border-radius: 5px;
             font-weight: bold;
         }
+        .experience {
+            padding: 80px 10%;
+            text-align: left;
+        }
+        .experience h2 {
+            color: #15803d;
+        }
+        .timeline {
+            position: relative;
+            margin-top: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            width: 2px;
+            height: 100%;
+            background: #15803d;
+        }
+        .timeline-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .timeline-item .dot {
+            width: 10px;
+            height: 10px;
+            background: #15803d;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+        .timeline-content {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
         footer {
             background: #fff;
             padding: 20px;
@@ -110,6 +147,28 @@
             </div>
         </div>
         <img src="Capture.PNG" alt="Kunal's Photo">
+    </section>
+    
+    <section id="experience" class="experience">
+        <h2>EXPERIENCE</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div class="timeline-content">
+                    <h3>2019 - Present</h3>
+                    <h4>Data Analyst - Corpay</h4>
+                    <p>Working on data analytics, forecasting, and machine learning models to optimize FX trading strategies.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div class="timeline-content">
+                    <h3>2017 - 2019</h3>
+                    <h4>Associate - Stock Broker</h4>
+                    <p>Managed stock portfolios and provided financial insights to clients.</p>
+                </div>
+            </div>
+        </div>
     </section>
     
     <footer>
