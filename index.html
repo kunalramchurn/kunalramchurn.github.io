@@ -98,32 +98,40 @@
         .timeline {
             position: relative;
             margin-top: 30px;
+            padding-left: 30px;
         }
         .timeline::before {
             content: '';
             position: absolute;
-            left: 15px;
-            width: 2px;
+            left: 10px;
+            width: 4px;
             height: 100%;
             background: #15803d;
+            top: 0;
+            border-radius: 2px;
         }
         .timeline-item {
             display: flex;
+            align-items: center;
             gap: 15px;
             margin-bottom: 30px;
+            position: relative;
         }
         .timeline-item .dot {
-            width: 10px;
-            height: 10px;
+            width: 14px;
+            height: 14px;
             background: #15803d;
             border-radius: 50%;
-            margin-top: 5px;
+            position: absolute;
+            left: 3px;
         }
         .timeline-content {
             background: #fff;
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-left: 30px;
         }
         footer {
             background: #fff;
@@ -163,7 +171,7 @@
     
     <section id="skills" class="skills">
         <h2>Skills</h2>
-        <img src="Images/git.png" alt="Git Logo">
+        <img src="Images/git-logo.png" alt="Git Logo">
     </section>
     
     <section id="experience" class="experience">
