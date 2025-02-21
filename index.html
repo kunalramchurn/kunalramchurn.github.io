@@ -85,7 +85,7 @@
             color: #15803d;
         }
         .skills img {
-            background:transparent;
+            background:none;
             width: 50px;
             height: auto;
             margin: 10px;
@@ -120,12 +120,14 @@
             position: relative;
         }
         .timeline-item .dot {
-            width: 14px;
-            height: 14px;
+            width: 12px;
+            height: 12px;
             background: #15803d;
             border-radius: 50%;
             position: absolute;
-            left: 3px;
+            left: -6px;  /* Adjust this to move the dot left/right */
+            top: 50%;
+            transform: translate(-50%, -50%); /* Ensures perfect centering */
         }
         .timeline-content {
             background: #fff;
