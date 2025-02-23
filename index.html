@@ -167,6 +167,19 @@
             width: 100%;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
+
+    #skills, #experience, #projects {
+    display: none;  /* Initially hidden */
+    opacity: 0;     /* Make them invisible */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth effect */
+        }
+
+    .show {
+    display: block !important; /* Make section visible */
+    opacity: 1;                /* Fade in */
+    transform: translateY(0);   /* Move to normal position */
+        }
     </style>
 </head>
 <body>
@@ -232,5 +245,30 @@
     <footer>
         <p>&copy; 2025 Kunal. All Rights Reserved.</p>
     </footer>
+    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("#skills, #experience, #projects");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            let targetId = this.getAttribute("href").substring(1); // Get target section ID
+
+            sections.forEach(section => {
+                section.classList.remove("show"); // Hide all sections smoothly
+                setTimeout(() => { section.style.display = "none"; }, 500); // Delay hiding for transition
+            });
+
+            let targetSection = document.getElementById(targetId);
+            targetSection.style.display = "block"; // Make it visible first
+            setTimeout(() => { targetSection.classList.add("show"); }, 10); // Add smooth effect
+        });
+    });
+});
+</script>
+
+    
 </body>
 </html>
